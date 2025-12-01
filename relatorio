@@ -1,1 +1,14 @@
+Relatório Jogo Sudoku
 
+Este projeto consiste na adaptação de um jogo de Sudoku simples em Python para  programação orientada a objetos, como nos requisitos do trabalho. 
+A versão original, feita no trimestre anterior, era um Sudoku 4x4, usando funções soltas como mostrar, válido e completo. Para esta nova entrega, reescrevi completamente o projeto no formato clássico 9x9
+e organizei tudo em classes, aplicando os conceitos de abstração, encapsulamento e etc.
+A primeira mudança importante foi a criação da classe Tabuleiro, que agora é responsável exclusivamente por armazenar a matriz do sudoku com métodos seguros para acessar ou modificar valores.
+O uso de get e set  representa o conceito de encapsulamento, já que o código principal não mexe diretamente na lista interna; todas as interações passam pelos métodos da classe. 
+Também coloquei dentro dela o método mostrar, que imprime o tabuleiro no terminal sempre que o jogador faz uma jogada, exibindo pontos onde há espaços vazios. Essa classe funciona como a “base de dados” do jogo.
+A terceira classe é a JogoSudoku, que organiza o fluxo geral da aplicação. Ela recebe um tabuleiro e as regras e controla a interação com o usuário, pedindo linha, coluna e valor. Aqui também coloquei o letreiro de abertura, 
+que melhora a apresentação no terminal. Essa classe representa o “controle” do programa, enquanto as outras duas cuidam da lógica interna. Essa separação deixa o projeto mais organizado.
+Durante o desenvolvimento, mantive apenas os conceitos presentes no código, sem adicionar nada além do solicitado. Cada classe já cumpre uma função específica e suficiente.
+ Os conceitos aplicados — abstração e encapsulamento — foram escolhidos por serem realmente úteis para organizar o sudoku e melhorar o código em relação ao projeto anterior.
+Em comparação com a versão 4x4, o novo projeto ficou mais  limpo e fácil de expandir. O código antigo executava tudo dentro de um único arquivo com funções independentes. 
+Agora, o fluxo está dividido de forma lógica em classes, e o jogo 9x9 torna a experiência mais próxima de um Sudoku real. A adaptação também tornou o código mais adequado aos padrões de orientação a objetos.
